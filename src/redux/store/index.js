@@ -7,8 +7,9 @@ import { rootSaga } from '../sagas';
 const sagaMiddleware = createSagaMiddleware();
 
 const initialState = {
-  isLoading: false,
+  isLoading: true,
   list: [],
+  error: null
 };
 
 export const store = createStore(

@@ -1,11 +1,12 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
-import { List } from '../../components/List';
+import React from 'react';
+import { List } from '../List';
+import './index.css';
+import { AppWrapper } from '../../components/styled/StyledApp';
 
 export const App = () => {
-  const isLoading = useSelector(state => state)
-  console.log(isLoading)
   return (
-    <List />
+    <AppWrapper>
+      <List />
+    </AppWrapper>
   );
 }

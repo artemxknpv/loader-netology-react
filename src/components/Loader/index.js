@@ -1,7 +1,8 @@
 import React from 'react';
+import ClipLoader from "react-spinners/ClipLoader";
 
-export const Loader = () => {
+export const Loader = ({ loading }) => {
   return (
-    <div>Loader</div>
+    <ClipLoader loading={loading} size={150} />
   );
 }
