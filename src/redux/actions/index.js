@@ -3,20 +3,20 @@ export const actionTypes = {
   FETCH_LIST_SUCCESS: 'FETCH_LIST_SUCCESS',
   FETCH_LIST_FAIL: 'FETCH_LIST_FAIL',
   LOADING_START: 'LOADING_START',
-  LOADING_END: 'LOADING_END'
+  LOADING_END: 'LOADING_END',
 }
 
 export const actions = {
   fetchList: {
-    start: payload => ({
+    start: (payload) => ({
       type: actionTypes.FETCH_LIST_START,
-      payload
+      payload,
     }),
-    success: payload => ({
+    success: (payload) => ({
       type: actionTypes.FETCH_LIST_SUCCESS,
-      payload
+      payload,
     }),
-    fail: payload => ({
+    fail: (payload) => ({
       type: actionTypes.FETCH_LIST_FAIL,
       payload,
       error: true,
@@ -24,10 +24,10 @@ export const actions = {
   },
   loading: {
     start: () => ({
-      type: actionTypes.LOADING_START
+      type: actionTypes.LOADING_START,
     }),
     end: () => ({
-      type: actionTypes.LOADING_END
-    })
+      type: actionTypes.LOADING_END,
+    }),
   },
 }

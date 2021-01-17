@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const DirectionTitle = styled.h2`
   font-size: 20px;
@@ -11,10 +11,10 @@ export const DirectionSubtitle = styled.h3`
   font-size: 16px;
   font-family: 'Golos', sans-serif;
   font-weight: normal;
-  color: #BCC1C6;
+  color: #bcc1c6;
 `
 
-export const ItemWrapper = styled.div`
+export const ItemWrapper = styled.li`
   padding: 16px 0;
   border-bottom: 1px solid #333;
   display: flex;
@@ -33,5 +33,5 @@ export const ItemAvatar = styled.div`
   min-width: 50px;
   min-height: 50px;
   border-radius: 50%;
-  background-color: #F2F4F7;
+  background-color: #f2f4f7;
 `

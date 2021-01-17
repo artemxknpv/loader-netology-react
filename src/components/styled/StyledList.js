@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const StyledHeader = styled.h1`
   font-size: 30px;
@@ -11,7 +11,7 @@ export const StyledEmphasis = styled.span`
   font-size: inherit;
   font-weight: inherit;
   font-family: inherit;
-  color: #0E78FA;
+  color: #0e78fa;
 `
 
 export const MainWrapper = styled.section`
@@ -23,5 +23,6 @@ export const MainWrapper = styled.section`
   padding: 40px;
 `
 
-export const ListWrapper = styled.section`
+export const ListWrapper = styled.li`
+  list-style: none;
 `

@@ -1,16 +1,29 @@
-import axios from 'axios';
+const THOSE_NUMBERS = ['2', '3', '4']
 
-export const fetchList = async url => {
-  return (await axios.get(url)).data;
-}
-
-export const parseList = list => {
-  return list.map(item => {
-    const title = item.direction.title
+export const parseList = (list) =>
+  list.map((item) => {
+    const { title } = item.direction
     const numberOfCourses = item.groups.reduce((prev, curr) => {
-      prev += curr.items.length;
-      return prev;
+      /* eslint-disable no-param-reassign */
+      prev += curr.items.length
+      return prev
     }, 0)
-    return { title, numberOfCourses, id: item.direction.id }
-  });
-}
+    let numberOfCoursesFormatted = numberOfCourses.toString()
+    const lastNumber =
+      numberOfCoursesFormatted[numberOfCoursesFormatted.length - 1]
+    if (
+      THOSE_NUMBERS.includes(lastNumber) &&
+      !(numberOfCourses % 100 < 19 && numberOfCourses % 100 > 10)
+    ) {
+      numberOfCoursesFormatted += ' курса'
+    } else if (lastNumber === '1' && numberOfCourses % 100 !== 11) {
+      numberOfCoursesFormatted += ' курс'
+    } else {
+      numberOfCoursesFormatted += ' курсов'
+    }
+    return {
+      title,
+      numberOfCourses: numberOfCoursesFormatted,
+      id: item.direction.id,
+    }
+  })

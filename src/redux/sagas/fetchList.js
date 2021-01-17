@@ -1,11 +1,11 @@
 import { takeEvery, call, put, delay } from 'redux-saga/effects'
-import { actions, actionTypes } from '../actions';
-import { fetchList } from '../tools/helpers';
+import { actions, actionTypes } from '../actions'
+import { fetchList } from '../tools/api'
 
 function* fetchListWorker(action) {
   yield put(actions.loading.start())
   try {
-    const response = yield call(fetchList, action.payload.url);
+    const response = yield call(fetchList, action.payload.url)
     yield delay(1000) // Для демонстрации лоадера
     yield put(actions.fetchList.success(response.data))
   } catch (e) {
