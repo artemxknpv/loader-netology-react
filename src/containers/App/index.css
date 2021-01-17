@@ -4,3 +4,11 @@
 	box-sizing: border-box;
 	font-weight: normal;
 }
+
+@font-face {
+		font-family: 'Golos Text Sans';
+		src: url('../../fonts/golos-bold.woff') format('woff'),
+				url('../../fonts/golos-demi-bold.woff') format('woff'),
+				url('../../fonts/golos-medium.woff') format('woff'),
+				url('../../fonts/golos-regular.woff') format('woff');
+}

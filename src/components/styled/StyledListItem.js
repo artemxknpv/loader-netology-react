@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 export const DirectionTitle = styled.h2`
   font-size: 20px;
-  font-family: 'Golos', sans-serif;
+  font-family: 'Golos Text Sans', sans-serif;
   margin-bottom: 8px;
   font-weight: bolder;
 `
 
 export const DirectionSubtitle = styled.h3`
   font-size: 16px;
-  font-family: 'Golos', sans-serif;
+  font-family: 'Golos Text Sans', sans-serif;
   font-weight: normal;
   color: #bcc1c6;
 `

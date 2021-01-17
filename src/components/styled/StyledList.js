@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyledHeader = styled.h1`
   font-size: 30px;
-  font-family: 'Golos', sans-serif;
+  font-family: 'Golos Text Sans', sans-serif;
   margin-bottom: 24px;
   font-weight: bolder;
 `
