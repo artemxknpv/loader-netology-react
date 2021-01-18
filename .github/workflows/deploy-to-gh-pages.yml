@@ -1,25 +1,22 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
+name: MasterDeployCI
+
+on: [push]
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+      - uses: actions/checkout@v1
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
         with:
-          persist-credentials: false 
-
-      - name: Install and Build 🔧
-        run: |
-          npm install
-          npm run-script build
-
-      - name: Deploy to GitHub Pages
+          node-version: 10.x
+      - run: |
+          yarn && yarn build
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main
-          FOLDER: dist
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
