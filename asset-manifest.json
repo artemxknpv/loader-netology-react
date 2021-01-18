@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/loader-netology-react/static/css/main.ede39b79.chunk.css",
+    "main.js": "/loader-netology-react/static/js/main.98591a64.chunk.js",
+    "main.js.map": "/loader-netology-react/static/js/main.98591a64.chunk.js.map",
+    "runtime-main.js": "/loader-netology-react/static/js/runtime-main.dd88909c.js",
+    "runtime-main.js.map": "/loader-netology-react/static/js/runtime-main.dd88909c.js.map",
+    "static/js/2.95f24a9e.chunk.js": "/loader-netology-react/static/js/2.95f24a9e.chunk.js",
+    "static/js/2.95f24a9e.chunk.js.map": "/loader-netology-react/static/js/2.95f24a9e.chunk.js.map",
+    "index.html": "/loader-netology-react/index.html",
+    "static/css/main.ede39b79.chunk.css.map": "/loader-netology-react/static/css/main.ede39b79.chunk.css.map",
+    "static/js/2.95f24a9e.chunk.js.LICENSE.txt": "/loader-netology-react/static/js/2.95f24a9e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/loader-netology-react/static/media/golos-regular.4356396c.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd88909c.js",
+    "static/js/2.95f24a9e.chunk.js",
+    "static/css/main.ede39b79.chunk.css",
+    "static/js/main.98591a64.chunk.js"
+  ]
+}
