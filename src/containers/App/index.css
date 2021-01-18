@@ -6,9 +6,29 @@
 }
 
 @font-face {
-		font-family: 'Golos Text Sans';
-		src: url('../../fonts/golos-bold.woff') format('woff'),
-				url('../../fonts/golos-demi-bold.woff') format('woff'),
-				url('../../fonts/golos-medium.woff') format('woff'),
-				url('../../fonts/golos-regular.woff') format('woff');
+	font-family: 'Golos Text Sans';
+	src: url('../../fonts/golos-bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Golos Text Sans';
+	src: url('../../fonts/golos-demi-bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Golos Text Sans';
+	src: url('../../fonts/golos-medium.woff') format('woff');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Golos Text Sans';
+	src: url('../../fonts/golos-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 500;
 }

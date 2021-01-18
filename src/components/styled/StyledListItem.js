@@ -10,7 +10,7 @@ export const DirectionTitle = styled.h2`
 export const DirectionSubtitle = styled.h3`
   font-size: 16px;
   font-family: 'Golos Text Sans', sans-serif;
-  font-weight: normal;
+  //font-weight: normal;
   color: #bcc1c6;
 `
 
